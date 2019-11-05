@@ -1,0 +1,107 @@
+/* This is a CSS file */
+body {
+  max-width:100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  height: 80vh;
+}
+.plate {
+  background-color: #fff;
+  background-image: linear-gradient(170deg, #fff 60%, #ddd);
+  border-radius: 6px;
+  box-shadow: 0 16px 10px -10px rgba(0, 0, 0, 0.4);
+  color: #222;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 52px;
+  font-weight: 900;
+  margin: 10px;
+  padding: 0.5em 0.3em 0;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  background: repeating-linear-gradient(135deg, #222, #222 8px, #666 8px, #666 12px);
+}
+.plate:before, .plate:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.plate:before {
+  z-index: -2;
+  background-image: inherit;
+}
+.plate:after {
+  margin: 4px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.plate span {
+  position: relative;
+  background: repeating-linear-gradient(135deg, #222, #222 8px, #666 8px, #666 12px);
+  -webkit-background-clip: text;
+  z-index: 1;
+}
+.plate span:before {
+  background-color: #00f;
+  color: #fff;
+  content: 'brazil';
+  font-size: 0.31em;
+  position: absolute;
+  text-align: center;
+  top: -25px;
+  left: -14px;
+  right: -7px;
+  border-radius: 6px 6px 0 0;
+  overflow: visible;
+  -webkit-text-fill-color: #fff;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.plate input{
+  width: 200px;
+  height: 70px;
+  font-size: 42px;
+  position: relative;
+  color: #353839;
+  -webkit-background-clip: text;
+  border:none;
+  margin-left:3.5%;
+  font-weight: bold;
+}
+body{
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #198cff;
+  border: none;
+  border-radius: 1px;
+  color: white;
+  padding: 8px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: -15px;
+}
+.plate{
+  margin-top: -150px;
+  margin-left: -10px;
+}
